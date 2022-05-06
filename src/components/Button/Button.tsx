@@ -3,7 +3,10 @@ import React, { FC } from "react"
 import { ButtonProps } from "./Button.types"
 import { StyledButton } from "./button-styles"
 
-const Button: FC<ButtonProps> = ({ disabled, onClick, primary, size, text, ...props}) => {
+const Button: FC<ButtonProps> = ({
+  disabled, onClick, primary,
+  size, text, ...props
+}) => {
   return (
     <StyledButton
       disabled={disabled}
